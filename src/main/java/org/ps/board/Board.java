@@ -38,7 +38,12 @@ public class Board {
     }
 
     public boolean isValidPosition (Position position) {
-        return position.getRow() >= 0 && position.getRow() < rows && position.getColumn() >= 0 && position.getColumn() < columns;
+        if(position.getRow() < 0 || position.getRow() >= rows || position.getColumn() < 0 || position.getColumn() >= columns) {
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
     private void validatePosition (Position position) throws BoardException {
@@ -52,7 +57,7 @@ public class Board {
         return piece(position) != null;
     }
 
-    public void placePiece(Position position, Piece piece) throws BoardException {
+    public void insertPiece(Position position, Piece piece) throws BoardException {
         if (isThereAPiece(position)) {
             throw new BoardException("There is already a piece on this position");
         }
