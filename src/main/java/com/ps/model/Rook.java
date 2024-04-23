@@ -1,9 +1,9 @@
-package org.ps.model;
+package com.ps.model;
 
-import org.ps.board.Board;
-import org.ps.board.Piece;
-import org.ps.board.Position;
-import org.ps.util.Color;
+import com.ps.board.Piece;
+import com.ps.board.Board;
+import com.ps.board.Position;
+import com.ps.util.Color;
 
 public class Rook extends Piece {
     public Rook(Board board, Color color) {

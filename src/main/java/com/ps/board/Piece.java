@@ -1,6 +1,6 @@
-package org.ps.board;
+package com.ps.board;
 
-import org.ps.util.Color;
+import com.ps.util.Color;
 
 public abstract class Piece {
     protected Position position;
@@ -64,7 +64,7 @@ public abstract class Piece {
         return false;
     }
 
-    public boolean possibleMove() {
+    public boolean possibleMove(Position target) {
         return possibleMoves()[position.getRow()][position.getColumn()];
     }
 

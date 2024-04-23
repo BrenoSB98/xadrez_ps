@@ -1,6 +1,6 @@
-package org.ps.board;
+package com.ps.board;
 
-import org.ps.exception.BoardException;
+import com.ps.exception.BoardException;
 
 public class Board {
     private int rows;

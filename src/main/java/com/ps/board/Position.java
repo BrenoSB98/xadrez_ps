@@ -1,4 +1,4 @@
-package org.ps.board;
+package com.ps.board;
 
 public class Position {
     private int row;

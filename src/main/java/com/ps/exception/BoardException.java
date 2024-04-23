@@ -1,4 +1,4 @@
-package org.ps.exception;
+package com.ps.exception;
 
 import java.io.Serial;
 

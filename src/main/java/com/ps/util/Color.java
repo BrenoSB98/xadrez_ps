@@ -1,4 +1,4 @@
-package org.ps.util;
+package com.ps.util;
 
 public enum Color {
     WHITE,

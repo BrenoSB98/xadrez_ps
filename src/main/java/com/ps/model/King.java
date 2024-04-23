@@ -1,10 +1,10 @@
-package org.ps.model;
+package com.ps.model;
 
-import org.ps.board.Board;
-import org.ps.board.Piece;
-import org.ps.board.Position;
-import org.ps.util.ChessMatch;
-import org.ps.util.Color;
+import com.ps.board.Piece;
+import com.ps.board.Board;
+import com.ps.board.Position;
+import com.ps.util.ChessMatch;
+import com.ps.util.Color;
 
 public class King extends Piece {
     private ChessMatch chessMatch;
@@ -78,7 +78,7 @@ public class King extends Piece {
         }
 
         // Special move: castling
-        if (getMoveCount() == 0 && !chessMatch.getCheck()) {
+        if (getMoveCount() == 0 && !chessMatch.isCheck()) {
 
             // Special move: castling kingside rook
             Position rookPosition1 = new Position(position.getRow(), position.getColumn() + 3);
